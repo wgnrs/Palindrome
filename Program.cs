@@ -22,11 +22,9 @@ namespace PalindromeNumber
             {
                 remainder = originalNumber % 10;                
                 reverseNumber = reverseNumber * 10 + remainder;                
-                originalNumber /= 10;
-                
+                originalNumber /= 10;                
             }
             
-
             if (tempNumber == reverseNumber)
             {
                 Console.WriteLine("Entered number is a palindrome number");
