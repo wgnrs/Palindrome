@@ -16,10 +16,11 @@ namespace PalindromeNumber
             {
                 System.Console.WriteLine("Input a 4 digit number : ");
                 originalNumber = int.Parse(Console.ReadLine());
+                if (originalNumber.ToString().ToCharArray().Length != 4)
+                    throw new Exception("Incorrect character size");
                 System.Console.WriteLine();
 
                 tempNumber = originalNumber;
-
 
                 while (originalNumber > 0)
                 {
@@ -31,7 +32,6 @@ namespace PalindromeNumber
                     Console.WriteLine("Entered number is a palindrome number");
                 else
                     Console.WriteLine("Entered number is not a palindrome number");
-
             }
             catch (FormatException e)
             {
